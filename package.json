@@ -1,0 +1,39 @@
+{
+  "name": "toc",
+  "version": "1.1.1",
+  "description": "tocmd.npm:a npm wrapper of toc",
+  "keywords": [
+    "doc",
+    "markdown",
+    "md",
+    "toc",
+    "table of content",
+    "ztree"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "npm publish .",
+    "test": " node bin/tocmd.js -f sample.md -v -o"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "toc": "bin/tocmd.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferhelper": "^0.2.0",
+    "commander": "^2.5.0",
+    "config": "^1.7.0",
+    "handlebars": "^2.0.0",
+    "marked": "^0.3.2",
+    "object-assign": "^1.0.0",
+    "open": "0.0.5",
+    "shelljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^2.1.1",
+    "gulp-watch": "^0.7.0",
+    "mocha": "*"
+  }
+}
